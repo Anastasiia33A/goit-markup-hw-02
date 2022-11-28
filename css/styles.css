@@ -7,17 +7,15 @@
     --accent-color: #E7E9FC;
     --light-color: #F4F4FD;
 }
-.body {
+body {
  background-color: #E5E5E5;
  color: var(--text-color);
  font-family: Roboto, sans-serif;
  letter-spacing: 0.02em;
- list-style: none;
- text-decoration: none;
 }
 .web-header {
     color: var(--primary-brand-color);
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -28,32 +26,31 @@
 }
 .studio-header {
     color: var(--dark-color);
-    font-family: Raleway;
-    font-family: 'Raleway';
+    font-family: Raleway , sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
 }
-.nav-menu-text{
+.menu-links .link{
     color: var(--dark-color);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.5; 
 }
-.nav-menu :hover, 
-.nav-menu :focus { 
+.menu-links .link:hover, 
+.menu-links .link:focus { 
     color: var(--text-color)
 }
-.nav-menu :active {
+.menu-links .link:active {
     color: var(--primary-brand-color);
 }
-.address-link {
+.address-link .link {
     color: var(--text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
 }
-.address-link :hover {
+.address-link .link:hover {
     color: var(--primary-brand-color);
 }
 .hero {
@@ -61,7 +58,7 @@
 }
 .hero-title {
     color: #FFFFFF;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -70,7 +67,7 @@
     background-color: var(--primary-brand-color);
     color: #FFFFFF;
     font-family: inherit;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     align-items: center;
@@ -88,7 +85,7 @@
 background-color: var(--accent-color);
 color: var(--primary-brand-color);
 font-family: inherit;
-font-weight: 600;
+font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
 align-items: center;
@@ -99,15 +96,21 @@ cursor: pointer;
 background-color: var(--primary-brand-color);
 color: #FFFFFF;
 font-family: inherit;
-font-weight: 600;
+font-weight: 500;
 font-size: 16px;
 line-height: 1.18;
 align-items: center;
 letter-spacing: 0.04em;
 }
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
 .section-title {
     color: var(--dark-color);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
@@ -115,7 +118,7 @@ letter-spacing: 0.04em;
 }
 .subtitle {
     color: var(--dark-color);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
 }
@@ -124,6 +127,7 @@ letter-spacing: 0.04em;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    text-decoration: none;
 }
 .footer {
     background-color: var(--dark-color);
@@ -149,4 +153,15 @@ letter-spacing: 0.04em;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
+}
+.text-footer {
+    color: #E7E9FC;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+.link {
+    list-style: none;
 }
